@@ -2,6 +2,7 @@ package com.example.cuatrimestre6_parcial1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -21,13 +22,66 @@ public class MainActivity extends AppCompatActivity {
         Integer[] idimage= {R.mipmap.mercurio,R.mipmap.venus,R.mipmap.tierra,R.mipmap.marte,R.mipmap.jupiter,R.mipmap.saturno,R.mipmap.urano,R.mipmap.neptuno};
         AdapterList adapter = new AdapterList( this,nombre,planeta,idimage);
         listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),"Seleccionaste el planeta: " +nombre[position],Toast.LENGTH_LONG).show();
+                if (nombre [position].equals("Mercurio")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), pantalla_mercurio.class);
+                    startActivity(i);
+
+                }
+                if (nombre [position].equals("Venus")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), Pantalla_venus.class);
+                    startActivity(i);
+
+                }
+                if (nombre [position].equals("Tierra")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), pantalla_tierra.class);
+                    startActivity(i);
+
+                }
+                if (nombre [position].equals("Marte")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), pantalla_marte.class);
+                    startActivity(i);
+
+                }
+                if (nombre [position].equals("Júpiter")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), pantalla_jupiter.class);
+                    startActivity(i);
+
+                }
+                if (nombre [position].equals("Saturno")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), pantalla_saturno.class);
+                    startActivity(i);
+
+                }
+                if (nombre [position].equals("Urano")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), pantalla_urano.class);
+                    startActivity(i);
+
+                }
+                if (nombre [position].equals("Neptuno")) {
+                    Toast.makeText(getApplicationContext(), "Seleccionaste el planeta: " + nombre [position], Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), Pantalla_neptuno.class);
+                    startActivity(i);
+
+                }
+
+
+
+
 
             }
         });
+
 
     }
 }

@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cuatrimestre6_Parcial1">
+        <activity android:name=".Pantalla_neptuno"></activity>
+        <activity android:name=".pantalla_urano" />
+        <activity android:name=".pantalla_saturno" />
+        <activity android:name=".pantalla_jupiter" />
+        <activity android:name=".pantalla_marte" />
+        <activity android:name=".pantalla_tierra" />
+        <activity android:name=".Pantalla_venus" />
+        <activity android:name=".pantalla_mercurio" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
