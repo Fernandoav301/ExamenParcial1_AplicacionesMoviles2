@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cuatrimestre6_Parcial1</string>
+    <string name="planeta">Numero de planeta: </string>
+    <string name="Nombre">Nombre:  </string>
+    <string name="sistema">Los planetas del sistema solar  </string>
+
+
+</resources>
